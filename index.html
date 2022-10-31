@@ -17,10 +17,14 @@
   <!-- fontawesome fonts icons -->
   <script src="https://kit.fontawesome.com/5639648f17.js" crossorigin="anonymous"></script>
   <script>
-    let a = 12;
-    let b = 10;
-    c= a+b;
-    alert(c);
+    var a = 12;
+    var b = 10;
+
+    function funcAdd(){
+      var c= a+b;
+      alert(c);
+    }
+
   </script>
 
 </head>
@@ -79,7 +83,7 @@
   <section id="features">
 
 <center>
-  <button type="button" name="button">hey</button>
+  <button onclick="funcAdd()" type="button" name="button">add Numbers</button>
 </center>
   </section>
 
