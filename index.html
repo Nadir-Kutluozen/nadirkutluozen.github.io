@@ -17,14 +17,21 @@
   <!-- fontawesome fonts icons -->
   <script src="https://kit.fontawesome.com/5639648f17.js" crossorigin="anonymous"></script>
   <script>
-    var a = 12;
-    var b = 10;
+    var a = document.querySelector("#fnum");
 
-    function funcAdd(){
-      var c= a+b;
-      alert(c);
+    function funcAdd(event) {
+
+      var a = parseInt(document.querySelector("#fnum").value);
+      console.log(a);
+
+      var b = parseInt(document.querySelector("#snum").value);
+      console.log(b);
+      var c = a + b;
+
+      document.getElementById('total').value = c;
+
+
     }
-
   </script>
 
 </head>
@@ -60,18 +67,18 @@
         </div>
       </nav>
 
-<center>
-  <img src="images/racoonjoey.gif" alt="racoon">
-  </center>
-<center>
+      <center>
+        <img src="images/racoonjoey.gif" alt="racoon">
+      </center>
+      <center>
 
-  <h1 >I'M NADIR
-  </h1>
-  </center>
+        <h1>I'M NADIR
+        </h1>
+      </center>
 
 
 
-        <img class="mountain"src="images/mountain.png" alt="mountain">
+      <img class="mountain" src="images/mountain.png" alt="mountain">
 
 
 
@@ -82,9 +89,58 @@
 
   <section id="features">
 
-<center>
-  <button onclick="funcAdd()" type="button" name="button">add Numbers</button>
+    <div class=" ">
+      <div class="row">
+        <div class="col-lg-6 p-5  col-sm-12">
+          <label for="fname">First number:</label>
+          <input type="number" id="fnum" name="fnum">
+        </div>
+
+        <div class="col-lg-6 p-5 col-sm-12">
+          <label for="lname">Second Number:</label>
+          <input type="number" id="snum" name="snum">
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-3    col-sm-12">
+
+      </div>
+      <div class="col-lg-3    col-sm-12">
+
+      </div>
+      <div class="col-lg-3    col-sm-12">
+
+      </div>
+      <div class="col-lg-3    col-sm-12">
+
+      </div>
+
+      <button class="btn btn-outline-light btn-lg d-block " onclick="oparetorSelect()" type="button" name="button"><i class="fa-solid fa-plus"></i></button>
+      <button class="btn btn-outline-light btn-lg d-block " onclick="oparetorSelect()" type="button" name="button"><i class="fa-solid fa-minus"></i></button>
+      <button class="btn btn-outline-light btn-lg d-block " onclick="oparetorSelect()" type="button" name="button"><i class="fa-solid fa-divide"></i></button>
+      <button class="btn btn-outline-light btn-lg d-block " onclick="oparetorSelect()" type="button" name="button"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+
+<center class="p-5">
+  <button class="btn btn-outline-light btn-lg d-block " onclick="funcAdd()" type="button" name="button">The Result</button><br><br>
+  <input type="text" id="total" name="total"><br><br>
+
 </center>
+
+
+
+    </div>
+
+
+
   </section>
 
 
