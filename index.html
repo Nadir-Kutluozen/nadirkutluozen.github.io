@@ -30,6 +30,12 @@
 
       document.getElementById('total').value = c;
 
+      function oparetorSelect() {
+        if () {
+
+        }
+      }
+
 
     }
   </script>
@@ -43,42 +49,59 @@
       <nav class="navbar navbar-expand-lg navbar-dark fixed-top  px-10 mb-2">
         <a class="navbar-brand px-5" href=""><i class="fa-solid fa-user"></i></a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler px-5" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
           <i class="fa-solid fa-burger animate-charcter"></i>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel">Offcanvas right</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">heyyo</button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item px-3" data-bs-dismiss="offcanvas" aria-label="Close">
+                <a class="nav-link" href="#title">Home</a>
+              </li>
+              <li class="nav-item px-3" data-bs-dismiss="offcanvas" aria-label="Close">
+                <a class="nav-link" href="#features">Calculator</a>
+              </li>
 
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item px-3">
-              <a class="nav-link " href="#title">home</a>
-            </li>
-            <li class="nav-item px-3">
-              <a class="nav-link" href="#features">Gallery</a>
-            </li>
-
-            <li class="nav-item px-3">
-              <a class="nav-link" href="#footer">Contact me</a>
-            </li>
-
-          </ul>
+              <li class="nav-item px-3" data-bs-dismiss="offcanvas" aria-label="Close">
+                <a class="nav-link" href="#footer">Contact me</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </nav>
-
-      <center>
-        <img src="images/racoonjoey.gif" alt="racoon">
-      </center>
-      <center>
-
-        <h1>I'M NADIR
-        </h1>
-      </center>
 
 
 
-      <img class="mountain" src="images/mountain.png" alt="mountain">
+    </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+    <center>
+      <img src="images/racoonjoey.gif" alt="racoon">
+    </center>
+    <center>
+
+      <h1>I'M NADIR
+      </h1>
+    </center>
+
+
+
+    <img class="mountain" src="images/mountain.png" alt="mountain">
 
 
 
@@ -102,38 +125,38 @@
         </div>
       </div>
 
-
-
-
     </div>
 
 
-    <div class="row">
-      <div class="col-lg-3    col-sm-12">
-
+    <!-- Default dropend button -->
+    <center>
+      <div class="btn-group dropend">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+          oparetor
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" id href="#"><button class="btn btn-secondary " onclick="oparetorSelect()" type="button" name="button"><i class="fa-solid fa-plus"></i></button></a></li>
+          <li><a class="dropdown-item" href="#"><button class="btn btn-secondary " onclick="oparetorSelect()" type="button" name="button"><i class="fa-solid fa-minus"></i></button></a></li>
+          <li><a class="dropdown-item" href="#"> <button class="btn btn-secondary " onclick="oparetorSelect()" type="button" name="button"><i class="fa-solid fa-divide"></i></button></a></li>
+          <li><a class="dropdown-item" href="#"> <button class="btn btn-secondary " onclick="oparetorSelect()" type="button" name="button"><i class="fa-solid fa-xmark"></i></button></a></li>
+        </ul>
       </div>
-      <div class="col-lg-3    col-sm-12">
-
-      </div>
-      <div class="col-lg-3    col-sm-12">
-
-      </div>
-      <div class="col-lg-3    col-sm-12">
-
-      </div>
-
-      <button class="btn btn-outline-light btn-lg d-block " onclick="oparetorSelect()" type="button" name="button"><i class="fa-solid fa-plus"></i></button>
-      <button class="btn btn-outline-light btn-lg d-block " onclick="oparetorSelect()" type="button" name="button"><i class="fa-solid fa-minus"></i></button>
-      <button class="btn btn-outline-light btn-lg d-block " onclick="oparetorSelect()" type="button" name="button"><i class="fa-solid fa-divide"></i></button>
-      <button class="btn btn-outline-light btn-lg d-block " onclick="oparetorSelect()" type="button" name="button"><i class="fa-solid fa-xmark"></i></button>
-    </div>
+    </center>
 
 
-<center class="p-5">
-  <button class="btn btn-outline-light btn-lg d-block " onclick="funcAdd()" type="button" name="button">The Result</button><br><br>
-  <input type="text" id="total" name="total"><br><br>
 
-</center>
+
+
+
+
+
+
+
+    <center class="p-5">
+      <button class="btn btn-outline-light btn-lg d-block " onclick="funcAdd()" type="button" name="button">The Result</button><br><br>
+      <input type="text" id="total" name="total"><br><br>
+
+    </center>
 
 
 
